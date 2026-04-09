@@ -5,7 +5,16 @@ export default function TapLayout() {
   return (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor: "blue",
+        tabBarActiveTintColor: "#ffd33d",
+        headerStyle: {
+          backgroundColor: "#25292e"
+        }, 
+        headerShadowVisible: false,
+        headerTintColor: "#fff",
+        tabBarStyle : {
+          backgroundColor :"#25292e"
+        }
+
       }}
     >
       <Tabs.Screen
@@ -34,6 +43,20 @@ export default function TapLayout() {
           ),
         }}
       />
+       <Tabs.Screen
+        name="toDoList"
+        options={{
+          title: "Lista Comida",
+          tabBarIcon: ({ color, focused }) => (
+            <Ionicons
+              name={focused ? "fast-food" : "fast-food-outline"}
+              color={color}
+              size={24}
+            />
+          ),
+        }}
+      />
     </Tabs>
+    
   );
 }
