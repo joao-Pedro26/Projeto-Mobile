@@ -56,6 +56,20 @@ export default function TapLayout() {
           ),
         }}
       />
+
+      <Tabs.Screen
+        name="roleta"
+        options={{
+          title: "Roleta",
+          tabBarIcon: ({ color, focused }) => (
+            <Ionicons
+              name={focused ? "dice" : "dice-outline"}
+              color={color}
+              size={24}
+            />
+          ),
+        }}
+      />
     </Tabs>
     
   );
