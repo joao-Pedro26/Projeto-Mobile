@@ -1,21 +1,16 @@
-import { View, Text, StyleSheet, Image } from 'react-native';
+import {  Text, StyleSheet } from 'react-native';
+import { Background } from '@/components/Background';
+
 
 export default function Home() {
     return (
-        <View style={styles.container}>
-
+        <Background Background style={styles.container}>
             <Text style={styles.titulo}>🍕 Bem-vindo!</Text>
-
-            {/* <Image
-                source={require('../../assets/comida.png')}
-                style={styles.imagem}
-            /> */}
 
             <Text style={styles.texto}>
                 Organize suas comidas favoritas de forma simples 😋
             </Text>
-
-        </View>
+        </Background>
     );
 }
 
@@ -25,8 +20,13 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#FFF8E1',
         padding: 20,
+    },
+
+    backgroundImage: {
+        width: '100%',
+        height: '100%',
+        resizeMode: 'cover',
     },
 
     titulo: {
@@ -42,10 +42,4 @@ const styles = StyleSheet.create({
         color: '#BF360C',
         marginTop: 15,
     },
-
-    imagem: {
-        width: 200,
-        height: 200,
-        resizeMode: 'contain',
-    }
 });
