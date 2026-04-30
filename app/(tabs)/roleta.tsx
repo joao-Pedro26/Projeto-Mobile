@@ -22,6 +22,7 @@ const opcoesDeComida = [
   "Cachorro Quente 🌭",
   "Salada 🥗",
   "Comida Japonesa 🍱",
+  "SUA MÃE 🍽️",
 ];
 
 export default function Roleta() {
