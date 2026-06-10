@@ -58,9 +58,9 @@ export default function TapLayout() {
       />
 
       <Tabs.Screen
-        name="roleta"
+        name="receita-surpresa"
         options={{
-          title: "Roleta",
+          title: "Receita Surpresa",
           tabBarIcon: ({ color, focused }) => (
             <Ionicons
               name={focused ? "dice" : "dice-outline"}
